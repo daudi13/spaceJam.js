@@ -27,7 +27,21 @@ figure {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
 body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125rem;
+  color: 0 0% 100%;
+  background-color: 230 35% 7%;
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -110,5 +124,28 @@ select {
 
 .text-white {
   color: 0 0% 100%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 4.75px;
+}
+
+.letter-spacing-2 {
+  letter-spacing: 2.7px;
+}
+
+.letter-spacing-3 {
+  letter-spacing: 2.35px;
+}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
 }
 /*# sourceMappingURL=index.css.map */

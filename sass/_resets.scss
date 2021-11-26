@@ -30,9 +30,23 @@ figure{
     margin: 0;
 }
 
+h1,
+h2,
+h3, 
+h4, 
+h5, 
+h6,
+p {
+    font-weight: 400;
+}
+
 // set up the body
-body {
-    line-height: 1.5;
+body { 
+    font-family: $ff-sans-normal;
+    font-size: $fs-400;
+    color: $clr-white;
+    background-color: $clr-dark;
+    line-height: 1.5; 
     min-height: 100vh;
 }
 
@@ -102,3 +116,18 @@ select {
 .text-dark {color: $clr-dark;}
 .text-accent {color: $clr-light;}
 .text-white {color: $clr-white;}
+
+//letter spacing
+
+.uppercase {text-transform: uppercase;}
+
+.letter-spacing-1 {letter-spacing:4.75px;}
+.letter-spacing-2 {letter-spacing:2.7px;}
+.letter-spacing-3 {letter-spacing:2.35px;}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
