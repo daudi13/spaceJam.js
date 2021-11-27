@@ -166,4 +166,14 @@ select {
   margin-right: .5em;
   font-weight: 700;
 }
+
+.large-button {
+  padding: 0 2em;
+  display: -ms-grid;
+  display: grid;
+  aspect-ratio: 1;
+  place-items: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=index.css.map */

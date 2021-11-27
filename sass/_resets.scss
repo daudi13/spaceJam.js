@@ -155,3 +155,15 @@ select {
         font-weight: 700;
     }
 }
+
+//components
+
+
+.large-button {
+    padding: 0 2em;
+    display: grid;
+    aspect-ratio: 1;
+    place-items: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
