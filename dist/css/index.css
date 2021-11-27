@@ -70,6 +70,11 @@ select {
   display: grid;
 }
 
+.flow > * + * {
+  margin: var(--flow-space, 1rem);
+  outline: 1px solid red;
+}
+
 .container {
   padding: 0 2em;
   max-width: 80rem;
@@ -147,5 +152,18 @@ select {
 .fs-700,
 .fs-600 {
   line-height: 1.1;
+}
+
+.numbered-title {
+  font-family: "Barlow condensed", sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 4.72px;
+  text-transform: uppercase;
+  color: 230 35% 7%;
+}
+
+.numbered-title .span {
+  margin-right: .5em;
+  font-weight: 700;
 }
 /*# sourceMappingURL=index.css.map */
