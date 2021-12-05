@@ -10,7 +10,6 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 62.5%;
 }
 
 body,
@@ -40,8 +39,8 @@ p {
 body {
   font-family: "Barlow", sans-serif;
   font-size: 1.125rem;
-  color: 0 0% 100%;
-  background-color: 230 35% 7%;
+  color: white;
+  background-color: #0c0e18;
   line-height: 1.5;
   min-height: 100vh;
 }
@@ -72,7 +71,6 @@ select {
 
 .flow > * + * {
   margin: var(--flow-space, 1rem);
-  outline: 1px solid red;
 }
 
 .container {
@@ -108,27 +106,27 @@ select {
 }
 
 .bg-dark {
-  background-color: 230 35% 7%;
+  background-color: #0c0e18;
 }
 
 .bg-accent {
-  background-color: 231 77% 90%;
+  background-color: #d2d8f9;
 }
 
 .bg-white {
-  background-color: 0 0% 100%;
+  background-color: white;
 }
 
 .text-dark {
-  color: 230 35% 7%;
+  color: #0c0e18;
 }
 
 .text-accent {
-  color: 231 77% 90%;
+  color: #d2d8f9;
 }
 
 .text-white {
-  color: 0 0% 100%;
+  color: white;
 }
 
 .uppercase {
@@ -159,12 +157,13 @@ select {
   font-size: 1.75rem;
   letter-spacing: 4.72px;
   text-transform: uppercase;
-  color: 230 35% 7%;
+  color: white;
 }
 
-.numbered-title .span {
+.numbered-title span {
   margin-right: .5em;
   font-weight: 700;
+  color: rgba(255, 255, 255, 0.25);
 }
 
 .large-button {
@@ -175,6 +174,7 @@ select {
   place-items: center;
   text-decoration: none;
   border-radius: 50%;
+  text-decoration: none;
   position: relative;
   z-index: 1;
 }
@@ -182,7 +182,7 @@ select {
 .large-button::after {
   content: '';
   position: absolute;
-  background-color: "";
+  background-color: rgba(255, 255, 255, 0.15);
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -198,5 +198,37 @@ select {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
   opacity: 1;
+}
+
+.primary-navigation {
+  gap: 8rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary-navigation a {
+  text-decoration: none;
+}
+
+.primary-navigation a span {
+  font-weight: 700;
+  margin: .5em;
+}
+
+.underline-indicators > * {
+  padding: 1em 0;
+  border-bottom: 0.2rem solid rgba(255, 255, 255, 0);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.underline-indicators > *:hover,
+.underline-indicators > *:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+.underline-indicators > .active {
+  border-color: white;
 }
 /*# sourceMappingURL=index.css.map */

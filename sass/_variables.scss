@@ -2,10 +2,13 @@
 
 //utility classes 
 
-$clr-dark: 230 35% 7%;
-$clr-light: 231 77% 90%;
-$clr-white: 0 0% 100%;
-
+$clr-dark: hsl(230, 35%, 7%);
+$clr-light: hsl(231, 77%, 90%);
+$clr-white: hsl(0, 0%, 100%);
+$clr-white-alpha: hsla(0, 0%, 100%, 0.15);
+$clr-white-alpha2: hsla(0, 0%, 100%, 0.25);
+$clr-white-alpha3: hsla(0, 0%, 100%, 0);
+$clr-white-alpha4: hsla(0, 0%, 100%, 1);
 
 //font sizes
 
@@ -27,10 +30,11 @@ $ff-sans-normal: "Barlow", sans-serif;
 
 //  https://stackoverflow.com/questions/29804080/using-a-sass-variable-mapped-to-an-hsl-value-doesnt-work-when-trying-to-use-it
 
-@function hsla($color, $alpha) {
-    @if(type-of($color) == 'color') {
-        @return hsla(hue($color), saturation($color), lightness($color), $alpha)
-    } @else {
-        @return ''
-    }
-}
+
+// @function hsla($color, $alpha) {
+//     @if(type-of($color) == 'color') {
+//         @return hsla(hue($color), saturation($color), lightness($color), $alpha)
+//     } @else {
+//         @return 'enterd wrong value'
+//     }
+// }
