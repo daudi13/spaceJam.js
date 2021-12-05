@@ -166,4 +166,26 @@ select {
     place-items: center;
     text-decoration: none;
     border-radius: 50%;
+    
+    position: relative;
+    z-index: 1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: hsla($clr-white, 0.15);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        z-index: -1;
+        transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+        opacity: 0;
+    } 
+
+    &:hover::after,
+    &:focus::after {
+        transform: scale(1.5);
+        opacity: 1;
+    }
 }
+
