@@ -24,12 +24,13 @@ $ff-serif:"Bellefair", serif;
 $ff-sans-cond: "Barlow condensed", sans-serif;
 $ff-sans-normal: "Barlow", sans-serif;
 
-//flow-space 
 
 //  https://stackoverflow.com/questions/29804080/using-a-sass-variable-mapped-to-an-hsl-value-doesnt-work-when-trying-to-use-it
 
 @function hsla($color, $alpha) {
     @if(type-of($color) == 'color') {
         @return hsla(hue($color), saturation($color), lightness($color), $alpha)
+    } @else {
+        @return ''
     }
 }
