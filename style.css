@@ -295,6 +295,7 @@ select {
     padding: .1em;
     background: var(--clr-dark);
     color: var(--clr-white);
+    transition: all .5s ease-in-out;
 }
 
 .number-indicators  > *:hover,
