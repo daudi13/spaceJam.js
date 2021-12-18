@@ -135,6 +135,11 @@ select {
     gap: var(--gap, 1rem);
 }
 
+.flex.even-columns > * {
+    width: 100%;
+    outline: 1px solid limegreen;
+}
+
 .grid {
     display: grid;
     gap: var(--gap, 1rem);
