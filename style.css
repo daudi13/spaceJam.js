@@ -190,7 +190,7 @@ select {
     .grid-container {
         text-align: left;
         column-gap: var(--container-gap, 2rem);
-        grid-template-columns: minmax(2rem, 1fr) repeat(minmax(0, 30rem)) minmax(2rem, 1fr);
+        grid-template-columns: minmax(1rem, 1fr) repeat(minmax(0, 30rem)) minmax(1rem, 1fr);
         
     }
 
@@ -386,4 +386,39 @@ select {
 .number-indicators > [aria-selected ='true'] {
     background-color:hsl( var(--clr-white));
     color: black;
+}
+
+/* --------------------- */
+/* page specific        */
+/* ------------------- */
+
+/* home */
+
+
+
+.home {
+    background-image: url(/space-tourism-website-main/starter-code/assets/home/background-home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+}
+
+@media (min-width: 35em) { 
+
+    .home {
+        background-image: url(/space-tourism-website-main/starter-code/assets/home/background-home-tablet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+    }
+}
+
+@media (min-width: 45em) {
+
+    .home {
+        background-image: url(/space-tourism-website-main/starter-code/assets/home/background-home-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center ;
+    }
 }
