@@ -9,7 +9,7 @@
     --clr-white: 0 0% 100%;
     
     /* font-sizes */
-    --fs-900: 9.375rem;
+    --fs-900: clamp(5rem, 7vw + 1rem, 9.375rem);
     --fs-800: 6.25rem;
     --fs-700: 3.5rem;
     --fs-600: 2rem;
@@ -155,6 +155,9 @@ select {
     display: grid;
 }
 
+.d-block {
+    display: block;
+}
 
 
 @media(min-width: 45em) {
